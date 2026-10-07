@@ -1,0 +1,11 @@
+<ul class="posts">
+{% for post in include.posts %}
+  <li>
+    <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time>
+    <div>
+      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      {% if post.excerpt %}<p>{{ post.excerpt | strip_html | truncatewords: 28 }}</p>{% endif %}
+    </div>
+  </li>
+{% endfor %}
+</ul>

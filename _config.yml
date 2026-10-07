@@ -1,0 +1,28 @@
+title: Darshan Naik
+tagline: Security researcher, trainer and content creator
+description: AI security and offensive security research, training and writing by Darshan Naik.
+# Set to your site address. For a project repo use url + baseurl (e.g. baseurl: "/my-repo")
+url: "https://YOUR-USERNAME.github.io"
+baseurl: ""
+
+author: Darshan Naik
+email: you@example.com
+
+# Social links (leave blank to hide)
+social:
+  github: ""
+  linkedin: ""
+  x: ""
+  youtube: ""
+
+markdown: kramdown
+highlighter: rouge
+permalink: /blog/:year/:month/:title/
+timezone: Asia/Kolkata
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+exclude: [Gemfile, Gemfile.lock, README.md, vendor]

@@ -1,0 +1,1 @@
+{% for s in site.social %}{% if s[1] != "" %}<a href="{% if s[0] == 'github' %}https://github.com/{{ s[1] }}{% elsif s[0] == 'linkedin' %}https://linkedin.com/in/{{ s[1] }}{% elsif s[0] == 'x' %}https://x.com/{{ s[1] }}{% elsif s[0] == 'youtube' %}https://youtube.com/@{{ s[1] }}{% endif %}" rel="me noopener">{{ s[0] | capitalize }}</a> {% endif %}{% endfor %}

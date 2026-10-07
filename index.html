@@ -1,0 +1,30 @@
+---
+layout: default
+---
+<section class="hero">
+  <h1>I break AI systems and teach others how.</h1>
+  <p class="lead">I'm {{ site.author }}, a security researcher, trainer and content creator. My work covers AI security and offensive security: finding how models, agents and the applications around them fail, and turning that into research, training and writing.</p>
+</section>
+
+<section class="focus">
+  <div>
+    <h2>AI security</h2>
+    <p>Prompt injection, agent and tool abuse, model and pipeline risks, and how to test LLM applications properly.</p>
+  </div>
+  <div>
+    <h2>Offensive security</h2>
+    <p>Web, API and infrastructure testing, adversary thinking, and practical tradecraft.</p>
+  </div>
+  <div>
+    <h2>Training and content</h2>
+    <p>Workshops, courses, talks and write-ups that make hard topics hands-on and easy to follow.</p>
+  </div>
+</section>
+
+<section>
+  <div class="section-head">
+    <h2>Latest writing</h2>
+    <a href="{{ '/blog/' | relative_url }}">All posts</a>
+  </div>
+  {% assign latest = site.posts | slice: 0, 5 %}{% include post-list.html posts=latest %}
+</section>
