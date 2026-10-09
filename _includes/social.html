@@ -1,1 +1,36 @@
-{% for s in site.social %}{% if s[1] != "" %}<a href="{% if s[0] == 'github' %}https://github.com/{{ s[1] }}{% elsif s[0] == 'linkedin' %}https://linkedin.com/in/{{ s[1] }}{% elsif s[0] == 'x' %}https://x.com/{{ s[1] }}{% elsif s[0] == 'youtube' %}https://youtube.com/@{{ s[1] }}{% endif %}" rel="me noopener">{{ s[0] | capitalize }}</a> {% endif %}{% endfor %}
+{% if site.social.linkedin and site.social.linkedin != "" %}
+<a href="{% if site.social.linkedin contains '://' %}{{ site.social.linkedin }}{% else %}https://linkedin.com/in/{{ site.social.linkedin }}{% endif %}" target="_blank" rel="me noopener noreferrer" aria-label="LinkedIn" class="social-icon">
+  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+  <span>LinkedIn</span>
+</a>
+{% endif %}
+{% if site.social.x and site.social.x != "" %}
+<a href="{% if site.social.x contains '://' %}{{ site.social.x }}{% else %}https://x.com/{{ site.social.x }}{% endif %}" target="_blank" rel="me noopener noreferrer" aria-label="X (Twitter)" class="social-icon">
+  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+  <span>X</span>
+</a>
+{% endif %}
+{% if site.social.instagram and site.social.instagram != "" %}
+<a href="{% if site.social.instagram contains '://' %}{{ site.social.instagram }}{% else %}https://instagram.com/{{ site.social.instagram }}{% endif %}" target="_blank" rel="me noopener noreferrer" aria-label="Instagram" class="social-icon">
+  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+  <span>Instagram</span>
+</a>
+{% endif %}
+{% if site.social.medium and site.social.medium != "" %}
+<a href="{% if site.social.medium contains '://' %}{{ site.social.medium }}{% else %}https://medium.com/@{{ site.social.medium }}{% endif %}" target="_blank" rel="me noopener noreferrer" aria-label="Medium" class="social-icon">
+  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"/></svg>
+  <span>Medium</span>
+</a>
+{% endif %}
+{% if site.social.topmate and site.social.topmate != "" %}
+<a href="{% if site.social.topmate contains '://' %}{{ site.social.topmate }}{% else %}https://topmate.io/{{ site.social.topmate }}{% endif %}" target="_blank" rel="me noopener noreferrer" aria-label="Topmate - Book 1:1" class="social-icon">
+  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" x2="16" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/><path d="m9 16 2 2 4-4"/></svg>
+  <span>Topmate</span>
+</a>
+{% endif %}
+{% if site.social.email and site.social.email != "" %}
+<a href="mailto:{{ site.social.email }}" aria-label="Email" class="social-icon">
+  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+  <span>Email</span>
+</a>
+{% endif %}

@@ -13,4 +13,10 @@ I research how AI systems and the software around them can be attacked, and I te
 - Security research and assessments
 - Talks and content collaborations
 
+{% if site.social.topmate and site.social.topmate != "" %}
+### 1:1 Mentorship & Booking
+Looking for 1:1 mentorship, guidance, or a security consultation? Book a session on [Topmate](https://topmate.io/{{ site.social.topmate }}).
+{% endif %}
+
+### Contact
 Get in touch at [{{ site.email }}](mailto:{{ site.email }}).

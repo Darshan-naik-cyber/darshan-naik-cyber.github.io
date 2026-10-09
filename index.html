@@ -2,8 +2,22 @@
 layout: default
 ---
 <section class="hero">
-  <h1>I break AI systems and teach others how.</h1>
-  <p class="lead">I'm {{ site.author }}, a security researcher, trainer and content creator. My work covers AI security and offensive security: finding how models, agents and the applications around them fail, and turning that into research, training and writing.</p>
+  <div class="hero-inner">
+    <div class="hero-text">
+      <h1>I break AI systems<br>and teach others how.</h1>
+      <p class="lead">I'm {{ site.author }}, a security researcher, trainer and content creator. My work covers AI security and offensive security: finding how models, agents and the applications around them fail, and turning that into research, training and writing.</p>
+      <div class="hero-socials">{% include social.html %}</div>
+    </div>
+    <div class="hero-avatar">
+      <img
+        src="{{ '/assets/profile.png' | relative_url }}"
+        alt="Portrait of {{ site.author }}"
+        width="220"
+        height="220"
+        loading="eager"
+      >
+    </div>
+  </div>
 </section>
 
 <section class="focus">
