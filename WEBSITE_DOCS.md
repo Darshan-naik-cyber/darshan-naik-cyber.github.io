@@ -265,16 +265,29 @@ Open [http://localhost:4000](http://localhost:4000) in your browser. Changes to 
 
 ---
 
-## 10. Deploying to GitHub Pages
+## 10. Deploying & Updating via GitHub
 
-1. Create a GitHub repo (e.g. `yourusername.github.io`)
-2. Push the contents of `site/` to the `main` branch
-3. In your repo → **Settings → Pages**, set source to `main` branch, root `/`
-4. Update `url` in `_config.yml` to your GitHub Pages URL:
-   ```yaml
-   url: "https://yourusername.github.io"
-   ```
-5. Push and wait ~2 minutes. Your site is live!
+Your site is connected to GitHub and automatically deployed on GitHub Pages:
+- **Repository**: [https://github.com/darshanhackz/darshahackz_here](https://github.com/darshanhackz/darshahackz_here)
+- **Live Website**: [https://darshanhackz.github.io/darshahackz_here/](https://darshanhackz.github.io/darshahackz_here/)
+
+### How to push updates in the future (3 simple steps)
+
+Whenever you edit a file, write a new blog post, or update your info:
+
+```bash
+# 1. Move into the site directory
+cd "/Users/darshannareshnaik/Desktop/Jhatu Website v1/site"
+
+# 2. Stage and commit your changes
+git add .
+git commit -m "Add new blog post / update site"
+
+# 3. Push to GitHub
+git push origin main
+```
+
+Within 30–60 seconds, GitHub automatically builds and updates your live site!
 
 ---
 
