@@ -2,6 +2,8 @@
 title: "XSS Payload Extracted Server Private Key | $$$ Bounty"
 tags: [Bug Bounty, Web Security, Vulnerabilities]
 ---
+> Its all about recon recon recon. 
+
 <p align="center"> <img src="{{ '/images/xss_bounty/bounty.webp' | relative_url }}" alt="Bounty" width="1800" /> </p>
 
 ## whoami
