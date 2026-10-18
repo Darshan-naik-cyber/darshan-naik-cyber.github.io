@@ -269,7 +269,7 @@ Open [http://localhost:4000](http://localhost:4000) in your browser. Changes to 
 
 Your site is connected to GitHub and automatically deployed on GitHub Pages:
 - **Repository**: [https://github.com/darshanhackz/darshanhackz.github.io](https://github.com/darshanhackz/darshanhackz.github.io)
-- **Live Website**: [https://darshanhackz.github.io/](https://darshanhackz.github.io/)
+- **Live Website**: [https://darshanhacks.com/](https://darshanhacks.com/) (also redirects from [https://darshanhackz.github.io/](https://darshanhackz.github.io/))
 
 ### How to push updates in the future (3 simple steps)
 
