@@ -5,7 +5,7 @@ permalink: /about/
 ---
 I'm Darshan Naik, a security researcher, trainer and content creator working on AI security and offensive security.
 
-I research how AI systems and the software around them can be attacked, and I teach people to test and defend them. Replace this page with your own story: background, current research, talks, certifications, and how people can work with you.
+I research how AI systems and the software around them can be attacked, and I teach people to test and defend them. 
 
 ## Work with me
 
@@ -15,8 +15,12 @@ I research how AI systems and the software around them can be attacked, and I te
 
 {% if site.social.topmate and site.social.topmate != "" %}
 ### 1:1 Mentorship & Booking
-Looking for 1:1 mentorship, guidance, or a security consultation? Book a session on [Topmate](https://topmate.io/{{ site.social.topmate }}).
+Looking for 1:1 mentorship, guidance, or a security consultation? 
+
+Book a session on [Topmate](https://topmate.io/{{ site.social.topmate }}).
 {% endif %}
 
 ### Contact
 Get in touch at [{{ site.email }}](mailto:{{ site.email }}).
+
+`Hire Me To Unlock My Full Potential :)`
