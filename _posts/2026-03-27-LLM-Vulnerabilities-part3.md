@@ -206,7 +206,6 @@ Output: Sure , Here are the reviews of the product — (Cookie Value).
 
 ### Portswigger Lab :
 
-
 [Portswigeer Insecure Output Handling](https://portswigger.net/web-security/llm-attacks/lab-exploiting-insecure-output-handling-in-llms)
 
 - Lets Understand this concept. 

@@ -1,4 +1,4 @@
-# Jhatu Website — Full Documentation
+# Darshan Naik Portfolio & Blog — Full Documentation
 
 > Your complete guide to updating and growing the site. No code knowledge needed for most tasks.
 
@@ -256,7 +256,7 @@ Change `0.9s` to make the typing faster or slower.
 You need Ruby and Jekyll installed. Then:
 
 ```bash
-cd "Jhatu Website v1/site"
+cd "darshanhacks Website/site"
 bundle install        # first time only
 bundle exec jekyll serve
 ```
@@ -277,7 +277,7 @@ Whenever you edit a file, write a new blog post, or update your info:
 
 ```bash
 # 1. Move into the site directory
-cd "/Users/darshannareshnaik/Desktop/Jhatu Website v1/site"
+cd "/Users/darshannareshnaik/Desktop/darshanhacks Website/site"
 
 # 2. Stage and commit your changes
 git add .
